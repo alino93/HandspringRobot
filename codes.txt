@@ -1,0 +1,130 @@
+angle_output
+thp_output
+angular_acc_output
+angular_velocity_output
+Xrel_output
+Vrel_output
+Arel_output
+disk_angular_velocity_otp
+N_opt
+f_prime_opt
+rubber_1_sensor_output
+rubber_2_sensor_output
+velocity_x_output
+velocity_y_output
+V_output
+Force_input
+Torque_input
+
+f_prime=mtot*(r*th_lddot+2*th_ldot*x_dot)-mtot*g*sin(th_l); %force on link from ground_normal to link
+        N=Fm+mbar*g*cos(th_l)+k*(L0-x)-c*x_dot-mbar*th_ldot*th_ldot*r;
+
+    figure(8);
+    ezplot(f_prime,[0,T]);  
+    title('f_prime(N)');
+    figure(9);
+    ezplot(N,[0,T]); %x=link velocity
+    title('N (N)');
+    figure(1);
+    ezplot(th_dd,[0,T]);  
+    title('Robot angular acc(rad/s^2)');
+    figure(2);
+    ezplot(th*180/pi,[0,T]);  
+    title('Robot angle relative to the normal(deg)');
+    figure(3);
+    ezplot(Tm,[0,T]);  
+    title('Rotor Torque(N.m)');
+    figure(4);
+    ezplot(th_d*180/pi,[0,T]);  
+    title('Robot angular Speed(deg/s)');
+    %plot linear motor force and displacement , link displacement
+    figure(5);
+    ezplot(Fm,[0,T]); %Fm=linear motor force
+    title('Fm (N)');
+    figure(6);
+    ezplot(x*1000,[0,T]); %x=link displacement
+    title('X (mm)');
+    figure(7);
+    ezplot(x_d,[0,T]); %x=link velocity
+    title('Vrel (m/s)');
+
+
+
+MOD(AZ(MARKER_206,MARKER_203),pi)
+
+
+V2=0.7;
+ La=pi/4;
+%--------------------
+T=0.34;
+R=0.45;
+g=9.8;
+x2=0.100; %x2=0.235
+Il=0.0196;
+Id=0.01;
+mtot=2.365; %total mass
+mwd=1.865;   %mass without disk
+mbar=0.00712; %bar mass
+L0=0.06; %L0=0.125
+c=37;
+k=200; %k=1000
+D=0.07; %D=0.12
+
+
+
+
+V2=2.3;
+La=pi/6;
+%--------------------
+T=0.11;  %0.4
+R=0.32;
+g=9.8;  %!!!!g=5.5
+x2=0.10; %
+Il=0.0196;
+Id=0.018;
+mtot=2.365; %total mass
+mwd=1.865;   %mass without disk
+mbar=0.00712; %bar mass
+L0=0.06; %L0=30cm
+c=37;
+k=200; %k=400
+D=0.07; %D=0.10--> TotalTime =0.8065   FlightTime =0.4065
+syms t
+
+
+
+
+T=0.34;  %0.4
+R=0.42;
+g=9.8;  %!!!!g=5.5
+x2=0.24; %
+Il=0.0196;
+Id=0.01;
+mtot=2.365; %total mass
+mwd=1.865;   %mass without disk
+mbar=0.00712; %bar mass
+L0=0.12; %L0=30cm
+c=37;
+k=200; %k=400
+D=0.07; %D=0.10--> TotalTime =0.8065   FlightTime =0.4065
+syms t
+
+
+
+V2=2.1;
+La=pi/4;
+%--------------------
+T=0.34;  %0.4
+R=0.42;
+g=9.8;  %!!!!g=5.5
+x2=0.24; %
+Il=0.0196;
+Id=0.01;
+mtot=2.365; %total mass
+mwd=1.865;   %mass without disk
+mbar=0.00712; %bar mass
+L0=0.12; %L0=30cm
+c=37;
+k=200; %k=400
+D=0.07; %D=0.10--> TotalTime =0.8065   FlightTime =0.4065
+syms t

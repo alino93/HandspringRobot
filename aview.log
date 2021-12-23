@@ -1,0 +1,8 @@
+! Adams/View Adams 2014 (built Aug 26 2014)
+! Graphics:  OpenGL
+! Using software OpenGL overlay plane emulation
+! Enter a command, '?', or 'help'.
+model display model=.MODEL_f view=all
+! >> model display model=.MODEL_f view=all
+! EXCEPTION: signal number 11
+interface dialog undisplay dialog=.gui.msg_box
