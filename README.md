@@ -8,7 +8,7 @@ Control, Design and Simulation of a One-legged Handspring Robot
 
 ![6](https://user-images.githubusercontent.com/73147643/147278780-b1a061ae-17d4-4b9a-ab91-6b6bbf6c5f51.JPG)
 
-![Annotation 2021-12-23 122420](https://user-images.githubusercontent.com/73147643/147278952-6d016bc8-5ee8-4c40-9a00-6b78e401f192.jpg)
+
 
 ![Picture1](https://user-images.githubusercontent.com/73147643/147278953-5c77530d-8bfa-49d4-90ab-18529dfdaec8.png)
 
