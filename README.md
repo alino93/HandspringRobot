@@ -9,7 +9,7 @@ For more information refer to this paper: Safa, A.T., Nouriani, A. and Alasty, A
 
 ![Capture](https://user-images.githubusercontent.com/73147643/147278773-160de4bc-e3c2-49c3-91a6-ea51534dfa81.JPG)
 
-## control
+## Feedback Linearization Control
 ![6](https://user-images.githubusercontent.com/73147643/147278780-b1a061ae-17d4-4b9a-ab91-6b6bbf6c5f51.JPG)
 
 ## Simulate
